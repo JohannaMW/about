@@ -89,29 +89,14 @@ blockquote {
     width: 420px;
 }
 
-.box_light_green {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;
-    background-color: #91C46C;
-}
-
-.box_green {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;
-    background-color: #287D7D;
-}
-
-.box_blue {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;
+.blue {
+    height : 300px;
+    border: 40px solid white;
     background-color: #1C344C;
+}
+
+.light_green {
+    height: 300px;
+    border: 40px solid white;
+    background-color: #91C46C;
 }
