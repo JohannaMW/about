@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, HttpResponseRedirect
+from django.shortcuts import HttpResponseRedirect, render
 from django.core.mail import send_mail
 
 from .forms import ContactForm
@@ -22,6 +22,6 @@ def home(request):
     else:
         form = ContactForm()
 
-    return render_to_response("index.html", {
+    return render(request, "index.html", {
         'form': form,
     })

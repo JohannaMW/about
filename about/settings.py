@@ -54,7 +54,7 @@ ROOT_URLCONF = 'about.urls'
 
 WSGI_APPLICATION = 'about.wsgi.application'
 
-
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
