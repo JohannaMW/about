@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load staticfiles bootstrap %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -130,7 +130,7 @@
         <div class="container">
             <div class="row">
                      <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img class="img-responsive" src="{% static "img/dropbox.png" %}">
+                        <img class="img-responsive" src="{% static "img/mobie.png" %}">
                      </div>
                      <div class="col-lg-8 col-md-8 col-sm-8">
                         <h1>Front-End Development, Web & Mobile Design</h1>
@@ -144,7 +144,7 @@
             </div>
             <div class="row" style="margin-top: 70px;">
                 <div class="col-lg-4 col-md-4 col-sm-4" style="float: right;">
-                     <img class="img-responsive" src="{% static "img/dropbox.png" %}">
+                     <img class="img-responsive" src="{% static "img/monitors.png" %}">
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8">
                      <h1 align="right">Back-End Development</h1>
@@ -188,16 +188,15 @@
         <div class="container">
             <div class="row">
                      <div class="col-lg-4 col-xs-12">
-                        <img class="img-responsive" src="{% static "img/dropbox.png" %}">
+                        <img class="img-responsive" src="{% static "img/post.png" %}">
                      </div>
                      <div class="col-lg-8 col-xs-12 col-md-8">
-                        <h1>Contact</h1>
-                         <p class="text">
-                             It has survived not only five centuries, but also the leap into electronic typesetting,
-                             remaining essentially unchanged. It was popularised in the 1960s with the release
-                             of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                         </p>
+                        <h1>Let's get together</h1>
+                        <form action="/" method="post">
+                            {% csrf_token %}
+                            {{ form|bootstrap }}
+                            <input type="submit" value="Submit">
+                        </form>
                      </div>
                 </div>
         </div>

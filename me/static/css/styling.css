@@ -108,3 +108,7 @@ footer {
          height: 250px;
          bottom: 0;
 }
+
+.control-label {
+    visibility: hidden;
+}
