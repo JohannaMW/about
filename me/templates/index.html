@@ -17,6 +17,9 @@
     <link href="{% static "css/styling.css" %}" rel="stylesheet"/>
     <link href="{% static "css/scrolling-nav.css" %}" rel="stylesheet"/>
 
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Pompiere|Cabin+Sketch|Amatic+SC' rel='stylesheet' type='text/css'>
+
     <!-- jQuery -->
     <script src="{% static "js/jquery.js" %}"></script>
     <script src="{% static "js/jquery.easing.min.js" %}"></script>
@@ -58,6 +61,9 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -82,13 +88,21 @@
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
+            <div class="row"><h1 align="center">About</h1>
+            </div>
                 <div class="row">
-                     <div class="col-lg-4 col-xs-12">
-                        <img class="img-responsive" src="{% static "img/dropbox.png" %}">
+                     <div class="col-md-6 col-lg-6">
+                        <h2 class="custom_h2" align="right">MY WORK</h2>
+                         <p class="text" align="right">
+                             It has survived not only five centuries, but also the leap into electronic typesetting,
+                             remaining essentially unchanged. It was popularised in the 1960s with the release
+                             of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                         </p>
                      </div>
-                     <div class="col-lg-8 col-xs-12 col-md-8">
-                        <h1>About</h1>
-                         <p class="text">
+                     <div class="col-md-6 col-lg-6">
+                        <h2 align="left" class="custom_h2">ME</h2>
+                         <p class="text" align="left">
                              It has survived not only five centuries, but also the leap into electronic typesetting,
                              remaining essentially unchanged. It was popularised in the 1960s with the release
                              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
@@ -96,6 +110,19 @@
                          </p>
                      </div>
                 </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="colored_row">
+                    <blockquote>"We're still in the first minutes of the first day of
+                        the Internet revolution." Scott Cook</blockquote>
+                </div>
+            </div>
+
+                <div class="more_info">
+                    <p>Learn more about what I do <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+                </div>
+
         </div>
     </section>
 
@@ -103,11 +130,11 @@
     <section id="services" class="services-section">
         <div class="container">
             <div class="row">
-                     <div class="col-lg-4 col-xs-12">
+                     <div class="col-lg-4 col-md-4">
                         <img class="img-responsive" src="{% static "img/dropbox.png" %}">
                      </div>
-                     <div class="col-lg-8 col-xs-12 col-md-8">
-                        <h1>Services</h1>
+                     <div class="col-lg-8 col-md-8 ">
+                        <h1>Front-End Development, Web & Mobile Design</h1>
                          <p class="text">
                              It has survived not only five centuries, but also the leap into electronic typesetting,
                              remaining essentially unchanged. It was popularised in the 1960s with the release
@@ -115,11 +142,48 @@
                              publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                          </p>
                      </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-lg-8 col-md-8">
+                     <h1 align="right">Back-End Development</h1>
+                         <p align="right" class="text">
+                             It has survived not only five centuries, but also the leap into electronic typesetting,
+                             remaining essentially unchanged. It was popularised in the 1960s with the release
+                             of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                         </p>
                 </div>
+                <div class="col-lg-4 col-md-4">
+                     <img class="img-responsive" src="{% static "img/dropbox.png" %}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="more_info">
+                    <p>Learn more about what I did <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Project Section -->
+    <section id="projects" class="contact-section">
+        <div class="container" style="width: 660px;">
+            <div class="row">
+                <div class="box_blue"></div>
+                <div class="box_light_green"></div>
+                <div class="box_blue"></div>
+            </div>
+
+            <div class="row">
+                <div class="box_light_green"></div>
+                <div class="box_blue"></div>
+                <div class="box_light_green"></div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">

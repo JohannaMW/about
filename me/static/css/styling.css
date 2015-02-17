@@ -3,6 +3,9 @@ body {
     color: #33536d !important;
 }
 
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
 
 .divider {
     border-top: 1px solid #a0afbb;
@@ -40,7 +43,7 @@ body {
 .text {
     padding-top: 10px;
     font-size: 16px;
-    color: #748796;
+    color: #1C344C;
     line-height: 1.875em;
     font-weight: 300;
 }
@@ -53,4 +56,62 @@ body {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.custom_h2 {
+    font-size: 20px;
+    color: #287D7D;
+    font-family: 'Amatic SC', cursive;
+}
+
+.colored_row {
+    opacity: 0.7;
+    margin-top: 100px;
+    background-color: #91C46C;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    color: #1C344C;
+    font-family: 'Amatic SC', cursive !important;
+}
+
+.more_info {
+    margin-top: 170px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.description {
+    width: 420px;
+}
+
+.box_light_green {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #91C46C;
+}
+
+.box_green {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #287D7D;
+}
+
+.box_blue {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #1C344C;
 }
