@@ -111,3 +111,35 @@ footer {
 .control-label {
     visibility: hidden;
 }
+
+.facebook {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 20px;
+}
+
+.facebook:hover {
+    opacity: 0.5;
+}
+
+.twitter {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 20px;
+}
+
+.twitter:hover {
+    opacity: 0.5;
+}
+
+.transition {
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+#social-row {
+    margin-top: 20px;
+}
