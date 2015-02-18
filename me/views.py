@@ -1,4 +1,4 @@
-from django.shortcuts import HttpResponseRedirect, render
+from django.shortcuts import HttpResponseRedirect, render, render_to_response
 from django.core.mail import send_mail
 
 from .forms import ContactForm
@@ -25,3 +25,6 @@ def home(request):
     return render(request, "index.html", {
         'form': form,
     })
+
+def impressum(request):
+    return render_to_response('impressum.html')

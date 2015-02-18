@@ -196,7 +196,7 @@
                         <form action="." method="post">
                             {% csrf_token %}
                             {{ form|bootstrap }}
-                            <input type="submit" value="Submit" style="margin-bottom: 10px;">
+                            <input class="btn btn-default" type="submit" value="Submit" style="margin-bottom: 10px;">
                         </form>
                      </div>
                 </div>
@@ -209,7 +209,27 @@
             <a href="http://www.twitter.com"><img class="twitter" src="{% static "img/twitter.png" %}"></a>
     </div>
     <div class="row">
-        
+        <ul class="nav navbar-nav nav-footer">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{%  url 'impressum' %}">Impressum</a>
+                    </li>
+                </ul>
     </div>
 </div>
 </footer>

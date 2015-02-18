@@ -143,3 +143,20 @@ footer {
 #social-row {
     margin-top: 20px;
 }
+
+.nav-footer {
+    font-family: 'Amatic SC', cursive !important;
+    font-size: 25px;
+}
+
+.nav-footer li a {
+    color: white !important;
+}
+
+.nav-footer li a:hover {
+    background-color: #80AD5F !important;
+}
+
+.nav-footer li a:focus {
+    background-color: #80AD5F !important;
+}

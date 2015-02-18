@@ -6,6 +6,7 @@ from . import settings
 
 urlpatterns = patterns('',
     url(r'^$', 'me.views.home', name='home'),
+    url(r'^impressum/', 'me.views.impressum', name='impressum'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
