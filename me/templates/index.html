@@ -1,39 +1,6 @@
-{% load staticfiles bootstrap %}
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Johanna</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet"/>
-    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet"/>
-    <link href="{% static "css/bootstrap-theme.css" %}" rel="stylesheet"/>
-    <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet"/>
-
-     <!-- Custom CSS -->
-    <link href="{% static "css/styling.css" %}" rel="stylesheet"/>
-    <link href="{% static "css/scrolling-nav.css" %}" rel="stylesheet"/>
-
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="{% static "js/jquery.js" %}"></script>
-    <script src="{% static "js/jquery.easing.min.js" %}"></script>
-
-     <!-- Bootstrap JS -->
-    <script src="{% static "js/bootstrap.js" %}"></script>
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/npm.js" %}"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="{% static "js/scrolling-nav.js" %}"></script>
-
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{% extends 'base_template.html' %}
+{% load bootstrap %}
+{%  block content %}
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
         <div class="container">
@@ -131,7 +98,7 @@
         <div class="container">
             <div class="row">
                      <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img class="img-responsive" src="{% static "img/mobie.png" %}">
+                        <img class="img-responsive" src="/static/img/mobie.png">
                      </div>
                      <div class="col-lg-8 col-md-8 col-sm-8">
                         <h1>Front-End Development, Web & Mobile Design</h1>
@@ -145,7 +112,7 @@
             </div>
             <div class="row" style="margin-top: 70px;">
                 <div class="col-lg-4 col-md-4 col-sm-4" style="float: right;">
-                     <img class="img-responsive" src="{% static "img/monitors.png" %}">
+                     <img class="img-responsive" src="/static/img/monitors.png">
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8">
                      <h1 align="right">Back-End Development</h1>
@@ -189,7 +156,7 @@
         <div class="container">
             <div class="row">
                      <div class="col-lg-4 col-xs-12">
-                        <img class="img-responsive" src="{% static "img/post.png" %}">
+                        <img class="img-responsive" src="/static/img/post.png">
                      </div>
                      <div class="col-lg-8 col-xs-12 col-md-8">
                         <h1>Let's get together</h1>
@@ -202,37 +169,37 @@
                 </div>
         </div>
     </section>
-<footer>
-<div class="container">
-    <div class="row" id="social-row">
-            <a href="http://www.facebook.com" target="_blank"><img class="facebook" src="{% static "img/facebook.png" %}"></a>
-            <a href="http://www.twitter.com" target="_blank"><img class="twitter" src="{% static "img/twitter.png" %}"></a>
-    </div>
-    <div class="row">
-        <ul class="nav navbar-nav nav-footer">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="{%  url 'impressum' %}">Impressum</a>
-                    </li>
-        </ul>
-    </div>
-</div>
-</footer>
 
-</body>
-</html>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row" id="social-row">
+                <a href="http://www.facebook.com" target="_blank"><img class="facebook" src="/static/img/facebook.png"></a>
+                <a href="http://www.twitter.com" target="_blank"><img class="twitter" src="/static/img/twitter.png"></a>
+        </div>
+        <div class="row">
+            <ul class="nav navbar-nav nav-footer">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="{%  url 'impressum' %}">Impressum</a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+{% endblock content %}

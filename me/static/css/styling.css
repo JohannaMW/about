@@ -147,6 +147,7 @@ footer {
 .nav-footer {
     font-family: 'Amatic SC', cursive !important;
     font-size: 25px;
+    width: 100%;
 }
 
 .nav-footer li a {
@@ -159,4 +160,9 @@ footer {
 
 .nav-footer li a:focus {
     background-color: #80AD5F !important;
+}
+
+.impressum {
+    height: 100%;
+    margin-top: 100px;
 }
