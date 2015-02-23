@@ -22,30 +22,28 @@ html {
 }
 
 .intro-section {
-    min-height: 100%;
-    padding-top: 100px;
-    background: url("/static/img/background5.jpg") no-repeat center center fixed;;
+    height: 100% !important;
+    width: 100% !important;
+    background: url("/static/img/background5.jpg") no-repeat center center fixed;
     background-size: cover;
+    margin-top: 10px;
 }
 
 .about-section {
     min-height: 100%;
     padding-top: 100px;
     margin-top: 10px;
-    background: #fff;
 }
 
 .services-section {
     min-height: 100%;
     padding-top: 100px;
     margin-top: 10px;
-    background: #fff;
 }
 
 .contact-section {
     min-height: 100%;
     padding-top: 100px;
     margin-top: 10px;
-    background: #fff;
 }
 
