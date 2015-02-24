@@ -62,7 +62,8 @@
     $(window).load(function() {
         var BV = new $.BigVideo({container: $("#intro")});
         BV.init();
-        BV.show('/static/video/intro.mp4');
+        BV.show('/static/video/intro.mp4',
+        {ambient:true});
 });
 </script>
 
