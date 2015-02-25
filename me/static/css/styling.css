@@ -79,7 +79,7 @@ blockquote {
 }
 
 .more_info {
-    margin-top: 170px;
+    margin-top: 180px;
     text-align: center;
     font-size: 15px;
 }
@@ -176,4 +176,5 @@ footer {
     background: white !important;
     position: absolute !important;
     content: center;
+    width: 100%;
 }
