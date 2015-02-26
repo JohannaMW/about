@@ -24,7 +24,9 @@ html {
 .intro-section {
     min-height: 100%;
     padding-top: 100px;
-    background: #fff;
+    background: url('/static/img/intro.JPG') no-repeat center center fixed;
+    background-size: cover;
+
 }
 
 .about-section {
