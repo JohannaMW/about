@@ -59,8 +59,12 @@
 
 <!-- Video -->
 
-<script>
-    var BV
+<script type="text/javascript">
+{% comment %}    function isTouchDevice() {
+        return true == ("ontouchstart" in window || window.DocumentTouch &&
+                document instanceof DocumentTouch);
+    }{% endcomment %}
+    var BV;
     $(window).load(function() {
             BV = new $.BigVideo({container: $("#intro")});
             BV.init();
