@@ -60,16 +60,18 @@
 <!-- Video -->
 
 <script>
-
+    var BV
     $(window).load(function() {
-            var BV = new $.BigVideo({container: $("#intro")});
+        $('body').waitForImages(function () {
+            BV = new $.BigVideo({container: $("#intro")});
             BV.init();
             if (Modernizr.touch) {
                 BV.show('/static/img/intro.JPG');
             } else {
                 BV.show('/static/video/intro.mp4',
-                        { ambient:true});
+                        {ambient: true});
             }
+        });
     });
 
 
