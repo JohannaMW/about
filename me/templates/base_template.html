@@ -46,6 +46,9 @@
     <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.theme.css" %}" rel="stylesheet"/>
     <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.theme.min.css" %}" rel="stylesheet"/>
 
+    <!-- Modernizr -->
+    <script src="{% static "js/modernizr.custom.js" %}"></script>
+
     <!-- Video.JS -->
     <link href="{% static "css/video-js.css" %}" rel="stylesheet"/>
     <script src="{% static "js/video.js" %}"></script>
@@ -55,19 +58,21 @@
     <script src="{% static "js/bigvideo.js" %}"></script>
 
 <!-- Video -->
-    <!-- Modernizr -->
-    <script src="{% static "js/modernizr.custom.js" %}"></script>
+
 <script>
+
     $(window).load(function() {
             var BV = new $.BigVideo({container: $("#intro")});
             BV.init();
             if (Modernizr.touch) {
-                BV.show('/static/img/intro.JPG')
+                BV.show('/static/img/intro.JPG');
             } else {
                 BV.show('/static/video/intro.mp4',
                         { ambient:true});
             }
     });
+
+
 </script>
 
 </head>
