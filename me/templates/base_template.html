@@ -63,7 +63,8 @@
             var BV = new $.BigVideo({container: $("#intro")});
 			BV.init();
             if (is_touch_device()) {
-                BV.show('/static/img/test.png');
+                var d = document.getElementById("intro");
+                d.className = "intro-section";
             } else {
                 BV.show('/static/video/intro.mp4',
                         {ambient: true});
