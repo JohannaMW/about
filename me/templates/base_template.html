@@ -20,9 +20,6 @@
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 
-        <!-- Modernizr -->
-    <script src="{% static "js/modernizr.custom.js" %}"></script>
-
     <!-- jQuery -->
     <script src="{% static "js/jquery.js" %}"></script>
     <script src="{% static "js/jquery.easing.min.js" %}"></script>
@@ -36,29 +33,24 @@
     <!-- Custom JavaScript -->
     <script src="{% static "js/scrolling-nav.js" %}"></script>
 
-    <!-- Images loaded plugin -->
+    <!-- BigVideo/ Video.JS -->
+    <link href="{% static "css/video-js.css" %}" rel="stylesheet"/>
+    <link href="{% static "css/bigvideo.css" %}" rel="stylesheet"/>
+    <script src="{% static "js/modernizr.custom.js" %}"></script>
     <script src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
 
-    <!-- jQuery UI -->
-    <script src="{% static "js/jquery-ui-1.11.3/jquery-ui.js" %}"></script>
-    <script src="{% static "js/jquery-ui-1.11.3/jquery-ui.min.js" %}"></script>
-    <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.css" %}" rel="stylesheet"/>
-    <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.min.css" %}" rel="stylesheet"/>
-    <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.structure.css" %}" rel="stylesheet"/>
-    <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.structure.min.css" %}" rel="stylesheet"/>
-    <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.theme.css" %}" rel="stylesheet"/>
-    <link href="{% static "js/jquery-ui-1.11.3/jquery-ui.theme.min.css" %}" rel="stylesheet"/>
+</head>
 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Video.JS -->
-    <link href="{% static "css/video-js.css" %}" rel="stylesheet"/>
-    <script src="{% static "js/video.js" %}"></script>
-
-    <!-- Big Video Pulgin -->
-    <link href="{% static "css/bigvideo.css" %}" rel="stylesheet"/>
-    <script src="{% static "js/bigvideo.js" %}"></script>
+{% block content %}
+{%  endblock content %}
 
 <!-- Video -->
+<script src="{% static "js/jquery-ui-1.11.3/jquery-ui.js" %}"></script>
+<script src="{% static "js/jquery-ui-1.11.3/jquery-ui.min.js" %}"></script>
+<script src="{% static "js/video.js" %}"></script>
+<script src="{% static "js/bigvideo.js" %}"></script>
 
 <script type="text/javascript">
     function isTouchDevice() {
@@ -77,16 +69,7 @@
                         {ambient: true});
             }
     });
-
-
 </script>
-
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-{% block content %}
-{%  endblock content %}
-
 
 </body>
 </html>
