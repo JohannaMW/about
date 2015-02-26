@@ -60,9 +60,9 @@
     }
 
     $(function() {
-            var BV = new $.BigVideo();
+            var BV = new $.BigVideo({container: $("#intro")});
 			BV.init();
-            if (is_touch_device({container: $("#intro")})) {
+            if (is_touch_device()) {
                 BV.show('/static/img/test.png');
             } else {
                 BV.show('/static/video/intro.mp4',
