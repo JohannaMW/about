@@ -53,22 +53,16 @@
 <script src="{% static "js/bigvideo.js" %}"></script>
 
 <script type="text/javascript">
-    function isTouchDevice() {
-        return true == ("ontouchstart" in window || window.DocumentTouch &&
-                document instanceof DocumentTouch);
-    }
-    var BV;
     $(window).load(function() {
-            BV = new $.BigVideo({container: $("#intro")});
-            BV.init();
-            if (isTouchDevice()===true) {
-                console.log("touch device");
+            var BV = new $.BigVideo();
+			BV.init();
+            if (Modernizr.touch) {
                 BV.show('/static/img/intro.JPG');
             } else {
                 BV.show('/static/video/intro.mp4',
                         {ambient: true});
             }
-    });
+	    });
 </script>
 
 </body>
