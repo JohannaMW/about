@@ -70,6 +70,7 @@
             BV = new $.BigVideo({container: $("#intro")});
             BV.init();
             if (isTouchDevice()===true) {
+                console.log("touch device");
                 BV.show('/static/img/intro.JPG');
             } else {
                 BV.show('/static/video/intro.mp4',
