@@ -196,3 +196,12 @@ footer {
     height: 100%;
     background-size: cover;
 }
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-content h1 {
+    font-family: 'Amatic SC', cursive !important;
+    color: #1C344C;
+}
