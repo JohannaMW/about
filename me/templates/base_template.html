@@ -53,16 +53,10 @@
 <script src="{% static "js/bigvideo.js" %}"></script>
 
 <script type="text/javascript">
-    function is_touch_device() {
-     return (('ontouchstart' in window)
-          || (navigator.MaxTouchPoints > 0)
-          || (navigator.msMaxTouchPoints > 0));
-    }
-
     $(function() {
             var BV = new $.BigVideo({container: $("#intro")});
 			BV.init();
-            if (is_touch_device()) {
+            if (Modernizr.touch) {
                 var d = document.getElementById("intro");
                 d.className = "intro-section";
             } else {
