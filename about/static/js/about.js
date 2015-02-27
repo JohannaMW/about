@@ -1,7 +1,8 @@
-var projects =     {"1":["/static/img/dropbox.png", "this is the description"],
-                    "2":["/static/img/mobie.png", "this is the description of my second project"],
-                    "3":["/static/img/mobie.png", "this is the description of my third project"],
-                    "4":["/static/img/mobie.png", "this is the description of my fourth project"]
+var projects =     {"1":["/static/img/zlm.png", "Zen License Manager, simple and easy to use license manager"],
+                    "2":["/static/img/kit.png", "Landing page for Kit"],
+                    "3":["/static/img/explore.png", "personal project, online travel book"],
+                    "4":["/static/img/tikky.png", "personal project, ticket tracker"],
+                    "5":["/static/img/battlefit.png", "Fitness battles among friends and peers"]
                     };
 var source;
 var description;
@@ -17,7 +18,7 @@ $('.project').mouseenter(function() {
             // remove color class
             $(this).removeClass('blue light_green');
             // add html
-            $(this).append("<img src=" + source[0] + "><div><p>" + String(description) + "</p></div></img>");
+            $(this).append("<img src=" + source[0] + "><div class='description'><p>" + String(description) + "</p></div></img>");
         }
     }
 });
