@@ -89,17 +89,24 @@ blockquote {
     width: 420px;
 }
 
-.blue {
+.project {
     height : 300px;
     border: 40px solid white;
+}
+
+.blue {
     background-color: #1C344C;
 }
 
 .light_green {
-    height: 300px;
-    border: 40px solid white;
     background-color: #91C46C;
 }
+
+.project img {
+    width: 100%;
+    height: 100%;
+}
+
 
 footer {
          background-color: #91C46C;

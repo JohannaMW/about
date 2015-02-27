@@ -141,10 +141,12 @@
         <div class="container">
             <div class="row"><h1 align="center">Past Projects</h1></div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 blue"></div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 light_green"></div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 blue"></div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 light_green"></div>
+                <a href="/">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 project blue" id="1"></div>
+                </a>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 project light_green" id="2"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 project blue"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 project light_green"></div>
             </div>
         </div>
     </section>
@@ -209,4 +211,36 @@
     </div>
 </footer>
 </div>
+    <script>
+    var projects = {"1":"/static/img/dropbox.png", "2":"/static/img/mobie.png"};
+var source;
+var htmlString = "<img src=" + source + "><div><p>What's it about</p></div></img>";
+
+$('.project').mouseenter(function() {
+    console.log('in function');
+    var id = (this.id);
+    // get matching image source
+    for (var key in projects) {
+        if (key !== id) {
+        } else {
+            source = projects[key];
+            console.log(source);
+            // remove color class
+            $(this).removeClass('blue light_green');
+            // add html
+            $(this).append("<img src=" + String(source) + "><div><p>What's it about</p></div></img>");
+        }
+    }
+});
+
+$('.project').mouseleave(function() {
+    console.log('leaving');
+    // remove image tag
+    $(this).empty();
+    // add color class
+    $(this).addClass('blue');
+});
+
+
+    </script>
 {% endblock content %}
