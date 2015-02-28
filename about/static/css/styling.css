@@ -1,3 +1,18 @@
+@font-face {
+        font-family: MomsDiner;
+        src: url('../fonts/MomsDiner.ttf');
+    }
+
+@font-face {
+        font-family: Steinerlight;
+        src: url('../fonts/Steinerlight.ttf');
+    }
+
+@font-face {
+        font-family: GoodKarma;
+        src: url('../fonts/GoodKarma.ttf');
+    }
+
 body {
     font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif !important;
     color: #33536d !important;
@@ -208,4 +223,9 @@ footer {
 .modal-content h1 {
     font-family: 'Amatic SC', cursive !important;
     color: #1C344C;
+}
+
+#name-logo {
+    font-family: 'MomsDiner', cursive !important;
+    font-size: 22px;
 }
