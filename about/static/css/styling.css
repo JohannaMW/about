@@ -13,6 +13,16 @@
         src: url('../fonts/GoodKarma.ttf');
     }
 
+@font-face {
+        font-family: Poppyseed;
+        src: url('../fonts/Poppyseed.ttf');
+    }
+
+@font-face {
+        font-family: Libro;
+        src: url('../fonts/Libro.ttf');
+    }
+
 body {
     font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif !important;
     color: #33536d !important;
@@ -228,4 +238,5 @@ footer {
 #name-logo {
     font-family: 'MomsDiner', cursive !important;
     font-size: 22px;
+    color: #33536d !important;
 }
