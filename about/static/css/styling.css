@@ -148,6 +148,7 @@ blockquote {
 
 .project:hover:before {
     background: none;
+    border: none;
 }
 
 .project img {
