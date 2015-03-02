@@ -257,7 +257,7 @@ footer {
     color: #1C344C;
 }
 
-#name-logo {
+.name-logo {
     font-family: 'MomsDiner', cursive !important;
     font-size: 22px;
     color: #33536d !important;
