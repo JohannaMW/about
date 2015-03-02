@@ -266,3 +266,10 @@ footer {
     font-size: 22px;
     color: #33536d !important;
 }
+
+.box {
+    background: rgba(28, 52, 76, 0.4);
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
