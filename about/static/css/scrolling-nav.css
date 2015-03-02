@@ -42,7 +42,7 @@ html {
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .page-bg {
+  .intro-section {
     height: 768px;
     background-image: url("/static/img/test.png");
   }
@@ -53,7 +53,7 @@ html {
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .page-bg {
+  .intro-section {
     height: 1024px;
     background-image: url("/static/img/test.png");
   }
