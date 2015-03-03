@@ -249,8 +249,7 @@ footer {
 }
 
 .intro-section {
-    width: 0% !important;
-    height: 0% !important;
+    background-image: url('../img/tikky.png');
 }
 
 .modal-content {
