@@ -176,25 +176,14 @@ footer {
     visibility: hidden;
 }
 
-.facebook {
+.social {
     height: 40px;
     width: 40px;
     float: right;
     margin-right: 20px;
 }
 
-.facebook:hover {
-    opacity: 0.5;
-}
-
-.twitter {
-    height: 40px;
-    width: 40px;
-    float: right;
-    margin-right: 20px;
-}
-
-.twitter:hover {
+.social:hover {
     opacity: 0.5;
 }
 
