@@ -64,7 +64,7 @@
 			BV.init();
             if (Modernizr.touch) {
                 var d = document.getElementById("intro");
-                d.className = "intro-section";
+                d.removeAttribute("id");
             } else {
                 BV.show('/static/video/intro.mp4',
                         {altSource:'/static/video/intro.webm', ambient: true});

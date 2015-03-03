@@ -242,14 +242,10 @@ footer {
     width: 100%;
 }
 
-.intro {
+#intro {
     width: 100%;
     height: 100%;
     background-size: cover;
-}
-
-.intro-section {
-    background-image: url('../img/tikky.png');
 }
 
 .modal-content {
