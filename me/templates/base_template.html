@@ -60,11 +60,11 @@
 
 <script type="text/javascript">
     $(function() {
-            var BV = new $.BigVideo({container: $(".intro")});
+            var BV = new $.BigVideo({container: $("#intro")});
 			BV.init();
             if (Modernizr.touch) {
-                // var d = document.getElementById("intro");
-                BV.show('/static/img/background.jpg');
+                var d = document.getElementById("intro");
+                d.className = "intro-section";
             } else {
                 BV.show('/static/video/intro.mp4',
                         {altSource:'/static/video/intro.webm', ambient: true});

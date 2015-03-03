@@ -248,40 +248,10 @@ footer {
     background-size: cover;
 }
 
-@media only screen and (min-width: 48em) {
-  .intro {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 1707px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
+.intro-section {
+    width: 0% !important;
+    height: 0% !important;
 }
-
-/* Page background-image landscape for iPad 3 */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  .intro {
-    height: 768px !important;
-  }
-}
-/* Page background-image portrait for iPad 3 */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  .intro-section {
-    height: 1024px !important;
-  }
-}
-
 
 .modal-content {
     padding: 20px;
