@@ -21,20 +21,9 @@ html {
     }
 }
 
-.intro-section {
-    height: 100%;
-    width: 100%;
-    padding-top: 100px;
-    background: url("/static/img/test.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 /* min 768px */
 @media only screen and (min-width: 48em) {
-  .intro-section {
+  #intro {
     position: fixed;
     top: 0;
     right: 0;
@@ -53,7 +42,7 @@ html {
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .intro-section {
+  #intro {
     height: 768px;
     background-image: url("/static/img/test.png");
   }
@@ -64,7 +53,7 @@ html {
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .intro-section {
+  #intro-section {
     height: 1024px;
     background-image: url("/static/img/test.png");
   }
